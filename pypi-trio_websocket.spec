@@ -4,7 +4,7 @@
 #
 Name     : pypi-trio_websocket
 Version  : 0.9.2
-Release  : 5
+Release  : 6
 URL      : https://files.pythonhosted.org/packages/75/91/44a0a016025794ba9fef530a6fbe59987153e2cbea7e11fe2f3d8c618740/trio-websocket-0.9.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/75/91/44a0a016025794ba9fef530a6fbe59987153e2cbea7e11fe2f3d8c618740/trio-websocket-0.9.2.tar.gz
 Summary  : WebSocket library for Trio
