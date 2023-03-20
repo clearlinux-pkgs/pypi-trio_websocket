@@ -1,5 +1,5 @@
 PKG_NAME := pypi-trio_websocket
-URL = https://files.pythonhosted.org/packages/78/36/1f8e186d8f29b44503bd1447cf9482b949ff4864d7b21c90f6688982310c/trio-websocket-0.10.0.tar.gz
+URL = https://files.pythonhosted.org/packages/ea/56/33f46c824c43493de52d62842e569a8c3db6b0e965825257a0684a608580/trio-websocket-0.10.2.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
