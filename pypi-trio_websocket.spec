@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-trio_websocket
-Version  : 0.10.4
-Release  : 13
-URL      : https://files.pythonhosted.org/packages/b2/9e/a529b1bb6289e252112c96929380d93a59c084bea90707701b9e7ee1af59/trio-websocket-0.10.4.tar.gz
-Source0  : https://files.pythonhosted.org/packages/b2/9e/a529b1bb6289e252112c96929380d93a59c084bea90707701b9e7ee1af59/trio-websocket-0.10.4.tar.gz
+Version  : 0.11.1
+Release  : 14
+URL      : https://files.pythonhosted.org/packages/dd/36/abad2385853077424a11b818d9fd8350d249d9e31d583cb9c11cd4c85eda/trio-websocket-0.11.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/dd/36/abad2385853077424a11b818d9fd8350d249d9e31d583cb9c11cd4c85eda/trio-websocket-0.11.1.tar.gz
 Summary  : WebSocket library for Trio
 Group    : Development/Tools
 License  : MIT
@@ -15,7 +15,6 @@ Requires: pypi-trio_websocket-license = %{version}-%{release}
 Requires: pypi-trio_websocket-python = %{version}-%{release}
 Requires: pypi-trio_websocket-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-BuildRequires : pypi(exceptiongroup)
 BuildRequires : pypi(trio)
 BuildRequires : pypi(wsproto)
 # Suppress stripping binaries
@@ -56,7 +55,6 @@ Summary: python3 components for the pypi-trio_websocket package.
 Group: Default
 Requires: python3-core
 Provides: pypi(trio_websocket)
-Requires: pypi(exceptiongroup)
 Requires: pypi(trio)
 Requires: pypi(wsproto)
 
@@ -65,10 +63,10 @@ python3 components for the pypi-trio_websocket package.
 
 
 %prep
-%setup -q -n trio-websocket-0.10.4
-cd %{_builddir}/trio-websocket-0.10.4
+%setup -q -n trio-websocket-0.11.1
+cd %{_builddir}/trio-websocket-0.11.1
 pushd ..
-cp -a trio-websocket-0.10.4 buildavx2
+cp -a trio-websocket-0.11.1 buildavx2
 popd
 
 %build
@@ -76,7 +74,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1694040531
+export SOURCE_DATE_EPOCH=1695826447
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
