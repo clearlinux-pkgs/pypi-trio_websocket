@@ -6,10 +6,10 @@
 # autospec commit: e36a856
 #
 Name     : pypi-trio_websocket
-Version  : 0.12.0
-Release  : 19
-URL      : https://files.pythonhosted.org/packages/f4/7f/75dc83abe5631353068629c82d8535e2fd4d457d6fe582bf5ff63c48dd41/trio_websocket-0.12.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/f4/7f/75dc83abe5631353068629c82d8535e2fd4d457d6fe582bf5ff63c48dd41/trio_websocket-0.12.0.tar.gz
+Version  : 0.12.1
+Release  : 20
+URL      : https://files.pythonhosted.org/packages/8d/ba/ab932f5f520565caf948ccadade04f82daa33272b9629b7bc71fd1bb1a63/trio_websocket-0.12.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/8d/ba/ab932f5f520565caf948ccadade04f82daa33272b9629b7bc71fd1bb1a63/trio_websocket-0.12.1.tar.gz
 Summary  : WebSocket library for Trio
 Group    : Development/Tools
 License  : MIT
@@ -55,6 +55,7 @@ Summary: python3 components for the pypi-trio_websocket package.
 Group: Default
 Requires: python3-core
 Provides: pypi(trio_websocket)
+Requires: pypi(outcome)
 Requires: pypi(trio)
 Requires: pypi(wsproto)
 
@@ -63,10 +64,10 @@ python3 components for the pypi-trio_websocket package.
 
 
 %prep
-%setup -q -n trio_websocket-0.12.0
-cd %{_builddir}/trio_websocket-0.12.0
+%setup -q -n trio_websocket-0.12.1
+cd %{_builddir}/trio_websocket-0.12.1
 pushd ..
-cp -a trio_websocket-0.12.0 buildavx2
+cp -a trio_websocket-0.12.1 buildavx2
 popd
 
 %build
@@ -74,7 +75,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1739810611
+export SOURCE_DATE_EPOCH=1739892030
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
